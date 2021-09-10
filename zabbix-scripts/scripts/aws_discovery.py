@@ -1,5 +1,5 @@
 #!/usr/bin/python
-#import ConfigParser
+import ConfigParser
 import argparse
 import importlib
 
@@ -41,4 +41,4 @@ if __name__ == "__main__":
     # Create instance of discoverer from this module and run actual discovery
     d = discovery_module.Discoverer(config, args.account,
                                     args.service, args.region)
-    # print d.get_instances(*args.args)
+     print d.get_instances(args.args)
