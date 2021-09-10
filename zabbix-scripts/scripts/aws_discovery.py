@@ -41,4 +41,4 @@ if __name__ == "__main__":
     # Create instance of discoverer from this module and run actual discovery
     d = discovery_module.Discoverer(config, args.account,
                                     args.service, args.region)
-    print d.getinstances(*args.args)
+    print discovery_module(*args.args)
